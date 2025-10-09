@@ -3,115 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap  JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>About Cambridge</title>
   </head>
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav class="navbar">
-        <h1>CAMBRIDGE</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="visit.html">Explore</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand navbar-brand-custom" href="index.html"
+          >CAMBRIDGE</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="visit.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
+
     <!-- MAIN CONTENT -->
-    <main class="about-page-main">
-      <div class="about-page-container-div">
+    <main class="container my-5">
+      <div class="row justify-content-center align-items-start mb-5">
         <!-- IMAGES -->
-        <div class="about-image-div">
-          <figure>
-            <img src="./img/aboutpage-img1.jpg" alt="Cambridge Cityscape" />
-            <figcaption>Cambridge Cityscape</figcaption>
-          </figure>
-          <figure>
-            <img src="./img/aboutpage-img2.jpg" alt="City View" />
-            <figcaption>City View</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="./img/aboutpage-img5.jpg"
-              alt="Students of Cambridge University"
-            />
-            <figcaption>Students of Cambridge University</figcaption>
-          </figure>
-          <figure>
-            <img src="./img/aboutpage-img4.jpg" alt="River Cam" />
-            <figcaption>River Cam</figcaption>
-          </figure>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="card-about h-100 shadow-sm mb-3">
+            <figure class="m-3 text-center">
+              <img
+                class="img-fluid rounded mb-2"
+                src="./img/aboutpage-img1.jpg"
+                alt="Cambridge Cityscape"
+              />
+              <figcaption class="text-left">Cambridge Cityscape</figcaption>
+            </figure>
+          </div>
+
+          <div class="card-about h-100 shadow-sm mb-3">
+            <figure class="m-3 text-center">
+              <img
+                class="img-fluid rounded mb-2"
+                src="./img/aboutpage-img2.jpg"
+                alt="City View"
+              />
+              <figcaption class="text-left">City View</figcaption>
+            </figure>
+          </div>
+
+          <div class="card-about h-100 shadow-sm mb-3">
+            <figure class="m-3 text-center">
+              <img
+                class="img-fluid rounded mb-2"
+                src="./img/aboutpage-img5.jpg"
+                alt="Students of Cambridge University"
+              />
+              <figcaption class="text-left">
+                Students of Cambridge University
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="card-about h-100 shadow-sm">
+            <figure class="m-3 text-center">
+              <img
+                class="img-fluid rounded mb-2"
+                src="./img/aboutpage-img4.jpg"
+                alt="River Cam"
+              />
+              <figcaption class="text-left">River Cam</figcaption>
+            </figure>
+          </div>
         </div>
         <!-- ARTICLE -->
-        <div class="about-article-div">
-          <article id="history">
-            <h2>History</h2>
-            <p>
-              The area of Cambridge shows evidence of settlement since the
-              Bronze Age and later became a trading center in Roman and Viking
-              times. By the 12th century, Cambridge had its first town charter,
-              while the University of Cambridge was founded in 1209. The
-              medieval colleges and their historic architecture remain central
-              to the city’s identity and global reputation. In 1951, Cambridge
-              was granted official city status, cementing its role as a cultural
-              and academic hub shaped by centuries of scholarship.
-            </p>
-          </article>
+        <div class="col-12 col-md-7">
+          <div class="about-article-div mt-3">
+            <article id="history">
+              <h2 class="text-center">History</h2>
+              <p>
+                The area of Cambridge shows evidence of settlement since the
+                Bronze Age and later became a trading center in Roman and Viking
+                times. By the 12th century, Cambridge had its first town
+                charter, while the University of Cambridge was founded in 1209.
+                The medieval colleges and their historic architecture remain
+                central to the city’s identity and global reputation. In 1951,
+                Cambridge was granted official city status, cementing its role
+                as a cultural and academic hub shaped by centuries of
+                scholarship.
+              </p>
+            </article>
 
-          <article id="geo-demo">
-            <h2>Geography & Demographics</h2>
-            <p>
-              Cambridge lies in eastern England, within Cambridgeshire county,
-              along the River Cam and about 55 miles (89 km) north of London.
-              The city covers roughly 41 km². Its 2024 estimated population is
-              around 149,352, with the 2021 census recording about 145,700
-              residents. The population is diverse, with a majority of White
-              British residents alongside growing Asian and international
-              communities. A high proportion of students and young professionals
-              contribute to the city’s vibrant and highly educated demographic
-              profile.
-            </p>
-          </article>
+            <article id="geo-demo">
+              <h2 class="text-center">Geography & Demographics</h2>
+              <p>
+                Cambridge lies in eastern England, within Cambridgeshire county,
+                along the River Cam and about 55 miles (89 km) north of London.
+                The city covers roughly 41 km². Its 2024 estimated population is
+                around 149,352, with the 2021 census recording about 145,700
+                residents. The population is diverse, with a majority of White
+                British residents alongside growing Asian and international
+                communities. A high proportion of students and young
+                professionals contribute to the city’s vibrant and highly
+                educated demographic profile.
+              </p>
+            </article>
 
-          <article id="edu-eco">
-            <h2>Education & Economy</h2>
-            <p>
-              Cambridge is world-renowned as the home of the
-              <em>University of Cambridge</em>, founded in 1209, with iconic
-              sites like King’s College Chapel and the Cavendish Laboratory. The
-              university and institutions such as Anglia Ruskin University drive
-              the city’s academic, cultural, and economic life. Research output
-              and entrepreneurial activity have made Cambridge a global hub for
-              innovation, especially in technology and biotechnology, often
-              called the “Silicon Fen.” The Cambridge Biomedical Campus and
-              high-tech clusters provide significant employment with a workforce
-              strongly concentrated in research and knowledge industries.
-            </p>
-          </article>
+            <article id="edu-eco">
+              <h2 class="text-center">Education & Economy</h2>
+              <p>
+                Cambridge is world-renowned as the home of the
+                <em>University of Cambridge</em>, founded in 1209, with iconic
+                sites like King’s College Chapel and the Cavendish Laboratory.
+                The university and institutions such as Anglia Ruskin University
+                drive the city’s academic, cultural, and economic life. Research
+                output and entrepreneurial activity have made Cambridge a global
+                hub for innovation, especially in technology and biotechnology,
+                often called the “Silicon Fen.” The Cambridge Biomedical Campus
+                and high-tech clusters provide significant employment with a
+                workforce strongly concentrated in research and knowledge
+                industries.
+              </p>
+            </article>
 
-          <article id="culture-transport">
-            <h2>Culture, Events & Transport</h2>
-            <p>
-              Cambridge has a rich cultural scene, with museums like the
-              Fitzwilliam Museum, university collections, theaters, and
-              festivals such as the Strawberry Fair. Sporting traditions,
-              including the famous Boat Race, reflect the city’s strong
-              university heritage. Modern music, art, and annual fairs
-              contribute to a lively cultural calendar. Transport links include
-              major roads (M11, A14), a busy railway station, and a
-              well-connected bus network, while cycling is one of the most
-              popular ways to move around. Visitors are also drawn to punting on
-              the River Cam, historic college courtyards, and the city’s many
-              green spaces.
-            </p>
-          </article>
+            <article id="culture-transport">
+              <h2 class="text-center font-monospace">
+                Culture, Events & Transport
+              </h2>
+              <p>
+                Cambridge has a rich cultural scene, with museums like the
+                Fitzwilliam Museum, university collections, theaters, and
+                festivals such as the Strawberry Fair. Sporting traditions,
+                including the famous Boat Race, reflect the city’s strong
+                university heritage. Modern music, art, and annual fairs
+                contribute to a lively cultural calendar. Transport links
+                include major roads (M11, A14), a busy railway station, and a
+                well-connected bus network, while cycling is one of the most
+                popular ways to move around. Visitors are also drawn to punting
+                on the River Cam, historic college courtyards, and the city’s
+                many green spaces.
+              </p>
+            </article>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Cambridge. All rights reserved.</p>
+    <footer class="text-center text-muted py-3 border-top">
+      <p class="mb-0">&copy; 2025 Cambridge. All rights reserved.</p>
     </footer>
   </body>
 </html>
