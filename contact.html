@@ -1,54 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-</head>
-<body>
+    <!-- Bootstrap CSS  -->
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap  JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- css custom -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div class="page-container">
-        <!-- NAVBAR -->
-        <header>
-            <nav class="navbar">
-                <h1>CAMBRIDGE</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="visit.html">Explore</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav> 
-        </header>
-        <!-- MAIN CONTENT -->
-        <main>
-            <section class="contact-section">
-                <div class="contact-section-main-div">
-                    <!-- TITLE -->
-                    <div class="contact-div">
-                        <h2>Contact Us</h2>
-                        <!-- FORM -->
-                        <form action="#">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-                    <!-- CONTACT INFORMATION -->
-                    <div class="info-div">
-                        <h2>Contact Information</h2>
-                        <a href="tel:1231231234" class="tel-a">123-123-1234</a>
-                        <a href="mailto:example@email.com" class="email-a">example@email.com</a>
-                    </div>    
-            </section>
-        </main>
-        <!-- FOOTER -->
-        <footer>
-            <p>&copy; 2025 Cambridge. All rights reserved.</p>
-        </footer>
+      <!-- NAVBAR -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+          <a class="navbar-brand navbar-brand-custom" href="index.html"
+            >CAMBRIDGE</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="visit.html">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main class="py-4 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h2 class="form-h2 mb-4 text-center">Contact Us</h2>
+              <!-- FORM -->
+              <form class="form">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-custom btn-lg">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- CONTACT INFORMATION -->
+            <div class="col-lg-6 col-md-12">
+              <div class="card-body text-center">
+                <h2 class="mb-4">Contact Information</h2>
+                <div class="mb-4">
+                  <a
+                    href="tel:1231231234"
+                    class="btn btn-outline-custom btn-block mb-2"
+                  >
+                    <i class="fas fa-phone mr-2"></i>123-123-1234
+                  </a>
+                  <a
+                    href="mailto:example@email.com"
+                    class="btn btn-outline-custom btn-block"
+                  >
+                    <i class="fas fa-envelope mr-2"></i>example@email.com
+                  </a>
+                </div>
+                <div class="mt-4">
+                  <h5>Visit Us</h5>
+                  <p class="text-muted">Cambridge, UK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="text-center text-muted py-3 border-top">
+        <p class="mb-0">&copy; 2025 Cambridge. All rights reserved.</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
