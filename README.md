@@ -24,6 +24,21 @@ multipage-website-with-bootstrap
 └─ img-visit/
 ```
 
+## Setup / Installation
+
+To run this project locally, follow these steps:
+
+**1.Clone the repository:**
+
+```bash
+git clone <repository-url>
+```
+
+**2.Open the index.html file:**
+
+Option 1: Simply double-click on index.html.<br>
+Option 2: Right-click the index.html file and choose Open With → Your Browser.
+
 ## Deployment
 
 This is my project live on GitHub Pages.<br>
