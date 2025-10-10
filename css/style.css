@@ -81,11 +81,12 @@
 .content-header{
 color:var(--header-color);
 font-family:var(--font-family-secondary);
+font-size: 25px;
 }
 
 .content-p-1{
   font-family: var(--font-family-secondary);
-  font-size:var(--font-size);
+  font-size:18px;
 }
 
 .content-h3{
